@@ -16,12 +16,13 @@ headers = {
     'cache-control': "no-cache",
     }
 
+st = datetime.datetime.utcnow().isoformat()
+
 def prof_on_start():
     prof.cons_show("Profanity has started...")
     prof.cons_show("Discord Forwarding Enabled")
 
 def prof_post_chat_message_display(barejid, resource, message):
-    st = datetime.datetime.utcnow().isoformat()
     if barejid == "TARGET_JID_HERE":
         prof.cons_show("JID IS " + barejid)
         prof.cons_show("MESSAGE IS " + message)
