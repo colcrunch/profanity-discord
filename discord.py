@@ -16,7 +16,6 @@ headers = {
     'cache-control': "no-cache",
     }
 
-st = datetime.datetime.utcnow().isoformat()
 
 def prof_on_start():
     prof.cons_show("Profanity has started...")
@@ -38,7 +37,7 @@ def prof_post_chat_message_display(barejid, resource, message):
                         "description": "```"+ message +"```\n "+ urlstr +" ***THIS IS PING HAS BEEN AUTOMATICALLY FORWARDED FROM JABBER***",
                         "url": "https://discordapp.com",
                         "color": 16259585,
-                        "timestamp": st,
+                        "timestamp": datetime.datetime.utcnow().isoformat(),
                             "footer":{
                                 "icon_url": footer_icon,
                                 "text": "Service by "+ svc_by
@@ -63,7 +62,7 @@ def prof_on_disconnect(account_name, fulljid):
                 "description": ":warning:***WARNING***:warning: \n\n **JABBER PING FORWARDING IS DOWN! (Reason: D)** \n **PLEASE NOTIFY "+ svc_by +" ASAP!** \n\n :warning:***WARNING***:warning:",
                 "url": "https://discordapp.com",
                 "color": 16776960,
-                "timestamp": st,
+                "timestamp": datetime.datetime.utcnow().isoformat(),
                     "footer":{
                         "icon_url": footer_icon,
                         "text": "Service by "+ svc_by
@@ -86,7 +85,7 @@ def prof_on_shutdown():
                 "description": ":warning:***WARNING***:warning: \n\n **JABBER PING FORWARDING IS DOWN!** \n **PLEASE NOTIFY "+ svc_by +" ASAP! (Reason: S)** \n\n :warning:***WARNING***:warning:",
                 "url": "https://discordapp.com",
                 "color": 16776960,
-                "timestamp": st,
+                "timestamp": datetime.datetime.utcnow().isoformat(),
                     "footer":{
                         "icon_url": footer_icon,
                         "text": "Service by "+ svc_by
