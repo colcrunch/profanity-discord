@@ -5,6 +5,7 @@ import time
 import datetime
 import re
 
+target_jid = "skynet@fcon.us"
 webhook_address = "YOUR_URL_HERE"
 footer_icon = "YOUR_AVATAR_HERE"
 svc_by = "YOUR_NAME_HERE"
@@ -22,7 +23,7 @@ def prof_on_start():
     prof.cons_show("Discord Forwarding Enabled")
 
 def prof_post_chat_message_display(barejid, resource, message):
-    if barejid == "TARGET_JID_HERE":
+    if barejid == target_jid:
         prof.cons_show("JID IS " + barejid)
         prof.cons_show("MESSAGE IS " + message)
         check = message
