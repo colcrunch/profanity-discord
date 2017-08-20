@@ -5,7 +5,7 @@ import time
 import datetime
 import re
 
-target_jid = "skynet@fcon.us"
+target_jid = "JID_TO_TARGET"
 webhook_address = "YOUR_URL_HERE"
 footer_icon = "YOUR_AVATAR_HERE"
 svc_by = "YOUR_NAME_HERE"
