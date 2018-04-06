@@ -1,4 +1,9 @@
 # profanity-discord
+
+**THIS PLUGIN IS NO LONGER RECIEVING UPDATES.**
+
+**PLEASE LOOK AT RUNNUNG AN INSTANCE OF [KILLBOT](http://github.com/colcrunch/killbot) WITH THE JabberPings EXTENSION ENABLED INSTEAD**
+
 A plugin for proafnity to forward jabber pings on to discord through a webhook.
 
 
